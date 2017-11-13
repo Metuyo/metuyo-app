@@ -19,29 +19,29 @@ Make any event simple
 
 * Users
 
-| Method | endpoint | Description |
-| --- | --- | --- |--- |
-| GET | /users | Get All |
-| GET | /users:id | get by:id |
-| PUT | /users:id | update one |
+| Method | endpoint  | Description |
+| ------ | --------- | ----------- |
+|  GET   |  /users   | Get All     |  
+|  GET   | /users:id | get by:id   |
+|   PUT  | /users:id | update one  |
 
 
 * Event
 
-| Method | endpoint | Description |
-| --- | --- | --- |--- |
-| GET | /event | Get All |
-| GET | /event:id | get by:id |
-| POST | /event | post by: user id |
+| Method | endpoint  | Description      |
+| ------ | --------- | ---------------- |
+| GET    | /event    | Get All          |
+| GET    | /event:id | get by:id        |
+| POST   | /event    | post by: user id |
 | DELETE | /event:id | delete by:id |
-| PUT | /event:id | update one |
+| PUT    | /event:id | update one |
 
-| Method | endpoint | Description |
-| --- | --- | --- |--- |
-| GET | /event/:id/join | Get All |
-| GET | /event/:id/join/:user_id | get by:id |
-| DELETE | /event:id | delete by:id |
+| Method | endpoint                  | Description |
+| ------ | ------------------------- | ----------- | 
+| GET    | /event/:id/join           | Get All     |
+| GET    | /event/:id/join/:user_id  | get by:id   |
+| DELETE | /event:id                 | delete by:id|
 
-| Method | endpoint | Description |
-| --- | --- | --- |--- |
-| Put | /event/:id/Not-join/:user_id | Update by id |
+| Method | endpoint                     | Description  |
+| ------ | ---------------------------- | -----------  |
+| Put    | /event/:id/Not-join/:user_id | Update by id |
