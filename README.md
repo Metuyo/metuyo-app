@@ -2,18 +2,20 @@
 
 Make any event simple
 # MongoDB
+
  MongoDB ATLAS
+ 
 # Database API-Schema
 
 
 * Auth
 
 
- | Method | endpoint | Description |
- | --- | --- | --- |--- |
- | POST | /auth/signup | Sign-up with new user data |
- | POST | /auth/signin | sign-in with user data |
- | POST | /auth/cheking | check token |
+ | Method | endpoint      | Description                |
+ | ------ | ------------- | -------------------------- |
+ |  POST  | /auth/signup  | Sign-up with new user data |
+ |  POST  | /auth/signin  | sign-in with user data     |
+ |  POST  | /auth/cheking | check token                |
 
 * Users
 
