@@ -24,11 +24,11 @@ render() {
     return (
     <div className="container content">
         <h2 className="title">Title</h2>
-        <p className="title-content">Angular Vs React</p>
+        <p className="title-content">Vue js</p>
         <h2 className="title">Locations</h2>
-        <p className="location-content">Impact Hub Kemang</p>
+        <p className="location-content">Mcdonald Kemang</p>
         <h2 className="title">Message</h2>
-        <p className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus lectus id velit consectetur luctus. Quisque faucibus, risus nec fringilla viverra, lorem nunc aliquam arcu, sed bibendum dui purus ac sapien. Donec lobortis laoreet ante nec mollis. Aliquam venenatis quam velit, sit amet pretium odio sagittis eget.</p>
+        <p className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus lectus id velit consectetur luctus.</p>
     </div>
     )   ;
     }
