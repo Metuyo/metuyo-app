@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile';
 import New from './Pages/New';
 import Present from './Pages/Present';

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Divider from 'material-ui/Divider';
 import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import {List, ListItem} from 'material-ui/List';
@@ -82,7 +81,7 @@ class Sidebar extends Component {
     
                 <List style={{padding: 0}}>
                   <Paper style={PaperStyle} zDepth={0}>
-                    <center>  <img src={logo} style={ImageStyle} /> </center>
+                    <center>  <img src={logo} alt="logo" style={ImageStyle} /> </center>
                     </Paper>
                 </List>
 
