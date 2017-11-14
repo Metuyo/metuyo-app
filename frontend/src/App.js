@@ -5,7 +5,7 @@ import { Route, HashRouter } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile';
 import New from './Pages/New';
-import Present from './Pages/Present';
+import Present from './Pages/Present/Present';
 
 class App extends Component {
   
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <HashRouter>
         <div>
-          <Route path='/home' component={Home} />
+          <Route path='/' component={Home} />
           <Route path='/learning-present' component={Present} />
           <Route path='/profile' component={Profile} />
           <Route path='/new-learning' component={New} />
