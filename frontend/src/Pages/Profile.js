@@ -5,8 +5,9 @@ class Profile extends Component {
 render() {
     return (
         <div className="container profile">
-            <Sidebar />
+            <Sidebar/>
             <p>Profile</p>
+
         </div>
         );
     }   
