@@ -18,7 +18,8 @@
 }
 .new-textarea{
     width: 60%;
-    margin-left: 30px;
+    height: 80px;
+    margin-left: 50px;
 }
 .message{
     height: 150px;
@@ -34,7 +35,7 @@
 .new-button{
     text-align: center;
 }
-label{
+.new-label{
     width: 85px;
     display: inline-block;
 }

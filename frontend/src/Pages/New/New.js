@@ -9,11 +9,11 @@ render() {
             <Sidebar/>
             <div className="new-body">
                     <div>
-                        <label>Title Event</label>
+                        <label className="new-label">Title Event</label>
                         <input className="input title" placeholder="Title"></input>
                     </div>
                     <div>
-                        <label>Location</label>
+                        <label className="new-label">Location</label>
                         <input className="input location" placeholder="Location"></input>
                     </div>
                     <div>
