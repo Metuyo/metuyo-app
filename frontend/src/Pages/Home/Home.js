@@ -20,7 +20,7 @@ class Home extends Component {
     }
 render() {
     return (
-        <div>
+        <div className="container home">
             <Sidebar/>
                 <div className="home-body">
                     <div className="home-layout">

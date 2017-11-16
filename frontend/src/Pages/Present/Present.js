@@ -9,17 +9,17 @@ render() {
     return (
         <div className="container present">
             <Sidebar />
-            <div className="home-body">
-                    <div className="home-layout">
-                        <div className="home-avatar">
+            <div className="present-body">
+                    <div className="present-layout">
+                        <div className="present-avatar">
                             <Avatar/> 
                         </div>
-                        <div className="home-content">
+                        <div className="present-content">
                             <Content/> 
                         </div>
                     </div>
                     <br/>
-                    <div className="home-button">
+                    <div className="present-button">
                         <button className="button-join">Join</button>
                     </div>
                         <Footer/> 
