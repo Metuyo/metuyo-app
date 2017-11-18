@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css'
-import Sidebar from '../../Sidebar'
 import Content from './Content'
 import Avatar from './Avatar'
 import Footer from './Footer'
@@ -21,7 +20,6 @@ class Home extends Component {
 render() {
     return (
         <div className="container home">
-            <Sidebar/>
                 <div className="home-body">
                     <div className="home-layout">
                         <div className="home-avatar">

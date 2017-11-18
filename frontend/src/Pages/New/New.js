@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import Sidebar from '../../Sidebar'
 import './New.css'
 
 class New extends Component {
 render() {
     return (
         <div className="container new">
-            <Sidebar/>
             <div className="new-body">
                     <div>
                         <label className="new-label">Title Event</label>

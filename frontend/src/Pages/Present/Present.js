@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Sidebar from '../../Sidebar'
 import Content from './Content'
 import Avatar from './Avatar'
 import Footer from './Footer'
@@ -8,7 +7,6 @@ class Present extends Component {
 render() {
     return (
         <div className="container present">
-            <Sidebar />
             <div className="present-body">
                     <div className="present-layout">
                         <div className="present-avatar">
@@ -20,7 +18,7 @@ render() {
                     </div>
                     <br/>
                     <div className="present-button">
-                        <button className="button-join">Join</button>
+                        <button className="button-join">Joined</button>
                     </div>
                         <Footer/> 
                 </div>
