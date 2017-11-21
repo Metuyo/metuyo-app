@@ -28,7 +28,7 @@ class New extends React.Component {
     
         const payload = {
         title: this.state.title,
-        locations: this.state.locations,
+        location: this.state.location,
         message: this.state.message
         };
     
@@ -59,11 +59,11 @@ render()
                     </div>
                     <div>
                         <label className="new-label">Location</label>
-                        <input className="input location" onChange={this.handleChange} id="locationnew"  placeholder="Location"></input>
+                        <input className="input location" onChange={this.handleChange} id="locationnew" name="location"  placeholder="Location"></input>
                     </div>
                     <div>
                         <label className="label-message">Message</label>
-                        <textarea className="new-textarea" onChange={this.handleChange} id="messagenew" placeholder="Type Your Message" rows="4"></textarea>
+                        <textarea className="new-textarea" onChange={this.handleChange} id="messagenew"  name="message" placeholder="Type Your Message" rows="4"></textarea>
                     </div>
                     <div className="new-button">
                         <button className="new-button-create" onClick={this.handleSubmit}>Create</button>

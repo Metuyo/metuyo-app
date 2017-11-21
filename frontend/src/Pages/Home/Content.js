@@ -28,7 +28,7 @@ render() {
             <h2 className="title">Title</h2>
             <p className="title-content">{data.title}</p>
             <h2 className="title">Locations</h2>
-            <p className="location-content">{data.locations}</p>
+            <p className="location-content">{data.location}</p>
             <h2 className="title">Message</h2>
             <p className="message-content">{data.message}</p>
             </div>
