@@ -27,6 +27,7 @@
 .bio-body{
     padding-top: 20px;
     margin-left: 98px;
+    text-align: justify;
 }
 /*Content.js --------------------------------------------------------  */
 
@@ -34,8 +35,8 @@
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.avatar-label{
+.avatar-label-profile{
     display: flex;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 /*Avatar.js --------------------------------------------------------  */

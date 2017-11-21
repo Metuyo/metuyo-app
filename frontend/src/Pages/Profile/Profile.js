@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Present from '../Present/Present'
-import Avatar from './Avatar'
+import Avatarprofile from './Avatar'
 import Profilecontent from './Content'
 
 class Profile extends Component {
@@ -9,7 +9,7 @@ render() {
         <div className="container profile">
             <div className="profile-body">
                 <div className="profileavatar">
-                    <Avatar/>
+                    <Avatarprofile/>
                 </div>
                 <div className="profilecontent">
                     <Profilecontent/>
