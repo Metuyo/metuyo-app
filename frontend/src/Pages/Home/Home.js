@@ -2,20 +2,16 @@ import React, { Component } from 'react';
 import './Home.css'
 import Contentlist from './Contentlist'
 import axios from "axios";
-
-
 class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
-            data:[]
+            datas:[]
         };
     }
-
     componentWillMount() {
         this.getEvents();
     }
-    
     getEvents() {
         axios
         .request({
@@ -31,16 +27,14 @@ class Home extends Component {
             console.log(error);
         });
     }
-
 render() {
     return (
         <div className="container home">
             <div className="home-content">
-                <Contentlist datas={this.state.data}/> 
+                <Contentlist datas={this.state.datas}/> 
             </div>
         </div>
         );
     }   
 }
-
 export default Home;

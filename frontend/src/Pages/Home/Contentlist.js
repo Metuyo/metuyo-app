@@ -18,24 +18,24 @@ class Contentlist extends Component {
     }
 render() {
     return (
-        <div>     
-        {this.props.datas.map(data => {
-            return <Content key={data._id} data={[data]} />
-        })}
             <div className="home-body">
-                    <div className="home-layout">
-                        <div className="home-avatar">
-                            <Avatar/> 
-                        </div>
-                    </div>
-                    <br/>
-                    <div className="home-button">
-                        <button className="button-join" onClick={this.klik}>{this.state.diklik ? 'Joined' : 'Not Join'}</button>
+                <div className="home-layout">
+                    <div className="home-avatar">
+                        <Avatar/> 
                     </div>
                 </div>
+                <br/>
+                <div>     
+                    {this.props.datas.map(data => {
+                        return <Content key={data._id} data={data} />
+                    })}
+                </div>
+                <div className="home-button">
+                    <button className="button-join" onClick={this.klik}>{this.state.diklik ? 'Joined' : 'Not Join'}</button>
+                </div>
+                
         </div>
         );
     }   
 }
-
 export default Contentlist;

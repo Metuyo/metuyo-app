@@ -30,7 +30,7 @@ class Content extends Component {
 render() {
     console.log(this.props.data);
 
-    const data = this.state.data;
+    const data = this.props.data;
     return (
     <div className="container content">
             <h2 className="title">Title</h2>
@@ -40,7 +40,7 @@ render() {
             <h2 className="title">Message</h2>
             <p className="message-content">{data.message}</p>
     </div>
-    )   ;
+    );
     }
 }
 
