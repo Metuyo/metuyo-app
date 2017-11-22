@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Content from './Content'
 import Avatar from './Avatar'
-import Footer from './Footer'
 
 class Present extends Component {
 render() {
@@ -20,7 +19,6 @@ render() {
                     <div className="present-button">
                         <button className="button-join">Joined</button>
                     </div>
-                        <Footer/> 
                 </div>
         </div>
         );

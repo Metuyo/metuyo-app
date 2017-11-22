@@ -47,8 +47,7 @@ class New extends React.Component {
         });
     };
 
-render() 
-{console.log(this.state);
+render(){
     return (
         
         <div className="container new">

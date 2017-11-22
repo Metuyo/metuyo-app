@@ -1,40 +1,43 @@
 import React, { Component } from 'react';
 import './Home.css'
-import Content from './Content'
-import Avatar from './Avatar'
-import Footer from './Footer'
+import Contentlist from './Contentlist'
+import axios from "axios";
+
 
 class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
-            diklik:false,
-        }
+            data:[]
+        };
     }
 
-    klik = () => {
-        this.setState({
-            diklik: !this.state.diklik,
-        })
+    componentWillMount() {
+        this.getEvents();
     }
+    
+    getEvents() {
+        axios
+        .request({
+            method: "get",
+            url: process.env.REACT_APP_API_URL + "/notes"
+        })
+        .then(response => {
+            this.setState({ datas: response.data }, () => {
+            console.log(this.state);
+            });
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }
+
 render() {
     return (
         <div className="container home">
-                <div className="home-body">
-                    <div className="home-layout">
-                        <div className="home-avatar">
-                            <Avatar/> 
-                        </div>
-                        <div className="home-content">
-                            <Content/> 
-                        </div>
-                    </div>
-                    <br/>
-                    <div className="home-button">
-                        <button className="button-join" onClick={this.klik}>{this.state.diklik ? 'Join' : 'Not Join'}</button>
-                    </div>
-                        <Footer/> 
-                </div>
+            <div className="home-content">
+                <Contentlist datas={this.state.data}/> 
+            </div>
         </div>
         );
     }   
