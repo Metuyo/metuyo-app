@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
 import './Home.css'
-import Content from './Content'
 import Avatar from './Avatar'
-import Footer from './Footer'
+const API_URL="http://localhost:4000/event"
 
 class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
             diklik:false,
+            data:[]
         }
     }
-
+        async componentWillMount(){
+        const RESPONSE = await fetch(API_URL)
+        const DATA = await RESPONSE.json()
+        console.log(DATA)
+        this.setState({
+        data:DATA
+            }
+        )
+    }
     klik = () => {
         this.setState({
             diklik: !this.state.diklik,
@@ -20,21 +28,28 @@ class Home extends Component {
 render() {
     return (
         <div className="container home">
-                <div className="home-body">
-                    <div className="home-layout">
-                        <div className="home-avatar">
-                            <Avatar/> 
-                        </div>
-                        <div className="home-content">
-                            <Content/> 
-                        </div>
+            {this.state.data.map(data => (
+            <div key={data._id} className="home-body">
+                <div className="home-layout">
+                    <div className="home-avatar">
+                        <Avatar/> 
                     </div>
-                    <br/>
-                    <div className="home-button">
-                        <button className="button-join" onClick={this.klik}>{this.state.diklik ? 'Join' : 'Not Join'}</button>
+                    <div className="home-content">
+                        <div>
+                            <h2 className="title">Title</h2>
+                            <p className="title-content">{data.title}</p>
+                            <h2 className="title">Locations</h2>
+                            <p className="location-content">{data.location}</p>
+                            <h2 className="title">Message</h2>
+                            <p className="message-content">{data.message}</p>
+                        </div>                        
                     </div>
-                        <Footer/> 
                 </div>
+                <div className="home-button">
+                    <button className="button-join" onClick={this.klik}>{this.state.diklik ? 'Join' : 'Not Join'}</button>
+                </div>
+            </div>
+            ))}
         </div>
         );
     }   

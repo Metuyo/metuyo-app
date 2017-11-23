@@ -33,13 +33,13 @@ class New extends React.Component {
         };
     
         axios
-        .post(`/notes`, payload)
+        .post(`/event`, payload)
         .then(response => {
             // NOTIFY ASKER
             console.log(response.data);
             alert(`New notes posted`);
             // REDIRECT TO ANSWER
-            this.props.history.push("/");
+            this.props.history.push("/home");
         })
         .catch(error => {
             console.log(error);

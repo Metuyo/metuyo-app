@@ -48,8 +48,8 @@ class Sidebar extends Component {
         });
       }
 
-      link = [
-        {'link': '/', 'text': 'Home', 'icon':<HomeStyle/> },
+      link = [       
+        {'link': '/home', 'text': 'Home', 'icon':<HomeStyle/> },
         {'link': '/profile', 'text': 'Profile', 'icon':<ActionAccountCircle/> },        
         {'link': '/learning-present', 'text': 'Present', 'icon':<ActionAssigment/> },
         {'link': '/new-learning', 'text': 'New', 'icon':<ActionCreate/> },
