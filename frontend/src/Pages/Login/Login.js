@@ -1,7 +1,9 @@
 import React from 'react';
+import "./Login.css";
 import axios from 'axios';
 import helpers from "../helpers";
 import Signup from '../Signup/Signup';
+import biru from "../../image/biru.png"
 
 class Login extends React.Component{
     constructor(props) {
@@ -68,14 +70,27 @@ class Login extends React.Component{
 render() {
     return (
         <div className="container login">
-            <div>
-                <label htmlFor="loginemail">Email</label>
-                <input type="email" id="loginemail" name="loginemail" className="login-email" placeholder="email" value={this.state.loginEmail} onChange={this.handleChange}/>>
-                <label htmlFor="loginpassword">Password</label>
-                <input type="password" id="loginpassword" name="loginpassword" className="login-password" placeholder="password" value={this.state.loginPassword} onChange={this.handleChange}/>>
-                <button className="login-button" type="submit" onClick={this.handleSubmit}>Log In</button>
+            <div className="login-body">
+                <img className="login-image" src={biru} alt="img"/>
+                <div className="login-divide">
+                    <div>
+                        <h1>Sign in</h1>
+                        <label>Make Any Meetup Simple</label>
+                        <br/>
+                        <br/>
+                        <div className="login-body-email">
+                        <input type="email" id="loginemail" name="loginemail" className="login-email" placeholder="email" value={this.state.loginEmail} onChange={this.handleChange}/>
+                        </div>
+                        <div className="login-body-password">
+                        <input type="password" id="loginpassword" name="loginpassword" className="login-password" placeholder="password" value={this.state.loginPassword} onChange={this.handleChange}/>
+                        </div>
+                        <button className="login-button" type="submit" onClick={this.handleSubmit}>Sign In</button>
+                    </div>
+                    <div>
+                        <Signup/> 
+                    </div> 
+                </div>
             </div>
-            <Signup/>        
         </div>
         );
     }   

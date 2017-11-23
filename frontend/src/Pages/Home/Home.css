@@ -1,9 +1,14 @@
+.home{
+    background: linear-gradient(white,#d3d8e8);
+    
+}
 .home-body{
     border: 1px solid #d9d9d9;
     margin: auto;
     margin-top: 30px;   
     padding: 10px;
     width: 50%;
+    
 }
 .button-join{
     width: 100px;

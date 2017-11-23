@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios"
-
+import './Signup.css';
 
 class signup extends Component {
     constructor(props) {
@@ -55,14 +55,22 @@ class signup extends Component {
 render() {
     return (
         <div className="container signup">
-            <label htmlFor="signupEmail">Email</label>
-            <input type="email" id="signupEmail" name="signupEmail" className="signup-email" placeholder="email" value={this.state.signupEmail} onChange={this.handleChange} />
-            <label htmlFor="signupPassword">Password</label>
-            <input type="password" id="signupPassword" name="signupPassword" className="signup-password" placeholder="password" value={this.state.signupPassword} onChange={this.handleChange} />
-            <label htmlFor="signupName">Name</label>
+            <div className="signup-body"> 
+            <h1>Sign Up</h1>
+            <label>Sign up for create or joining event here</label>
+            <br/>
+            <br/>
+            <div>
             <input type="text" id="signupName" name="signupName" className="signup-password" placeholder="name" value={this.state.signupName} onChange={this.handleChange} />
+            </div>
+            <div>
+            <input type="email" id="signupEmail" name="signupEmail" className="signup-email" placeholder="email" value={this.state.signupEmail} onChange={this.handleChange} />
+            </div>
+            <div>
+            <input type="password" id="signupPassword" name="signupPassword" className="signup-password" placeholder="password" value={this.state.signupPassword} onChange={this.handleChange} />
+            </div>
             <button className="signup-button" type="submit" onClick={this.handleSubmit}>Sign up</button>
-            
+            </div>
         </div>
         );
     }   
